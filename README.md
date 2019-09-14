@@ -30,7 +30,7 @@ docker run -d --hostname rabbitmq --name rabbitmq --network=skynet -p 15672:1567
 > Abra o prompt como Admin
 
 `
-notepad c:\windows\drivers\etc\hosts
+notepad c:\windows\system32\drivers\etc\hosts
 `
 ### Mac/Linux
 
