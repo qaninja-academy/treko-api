@@ -46,9 +46,11 @@ sudo vim /etc/hosts
 
 ### Acrescente as configurações
 
+`
 127.0.0.1   mongo # URL do MongoDb
 127.0.0.1   rabbitmq # URL do RabbitMQ 
 127.0.0.1   jenkins # URL do Jenkins :)
+
 
 > Não esqueça de trocar os IPS pelo Alias no código fonte :)
 
