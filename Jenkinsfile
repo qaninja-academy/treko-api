@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh "echo 'http://dl-cdn.alpinelinux.org/alpine/v3.9/main' >> /etc/apk/repositories"
         sh "echo 'http://dl-cdn.alpinelinux.org/alpine/v3.9/community' >> /etc/apk/repositories"
-        sh "apk update && apk add --no-cache mongodb=4.1"
+        sh "apk update && apk add --no-cache mongodb"
         sh "chmod +x ./scripts/dropdb.sh"
         sh "npm install"
       }
