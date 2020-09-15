@@ -8,12 +8,13 @@ pipeline {
   stages {
     stage("Build") {
       steps {
-        sh "echo 'http://dl-cdn.alpinelinux.org/alpine/v3.8/main' >> /etc/apk/repositories"
-        sh "echo 'http://dl-cdn.alpinelinux.org/alpine/v3.8/community' >> /etc/apk/repositories"
+        sh "echo 'http://dl-cdn.alpinelinux.org/alpine/v3.9/main' >> /etc/apk/repositories"
+        sh "echo 'http://dl-cdn.alpinelinux.org/alpine/v3.9/community' >> /etc/apk/repositories"
         sh "apk upgrade --update"
         sh "apk update"
-        sh "apk add --no-cache --update mongodb"
+        sh "apk add mongodb yaml-cpp=0.6.2-r2"
         sh "chmod +x ./scripts/dropdb.sh"
+        sh "mongo -version"
         sh "npm install"
       }
     }
