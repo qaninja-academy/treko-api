@@ -27,7 +27,7 @@ export default {
             }
 
             if (err.name === 'MongoError') {
-                return res.status(409).json(err)
+                return res.status(409).json({'msg' : 'Error while trying to save the document'})
             }
 
             return res.status(500).json(err)
