@@ -102,7 +102,7 @@ describe('post', () => {
                 .send(task)
                 .end((err, res) => {
                     expect(res).to.has.status(409)
-                    expect(res.body.errmsg).to.include('duplicate key')
+                    expect(res.body.name).to.include('MongoError')
                     done()
                 })
         })
