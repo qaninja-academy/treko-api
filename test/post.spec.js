@@ -102,7 +102,7 @@ describe('post', () => {
                 .send(task)
                 .end((err, res) => {
                     expect(res).to.has.status(409)
-                    expect(res.body.errmsg).to.include('duplicate key')
+                    expect(res.body.msg).to.include('Error while trying to save the document')
                     done()
                 })
         })
