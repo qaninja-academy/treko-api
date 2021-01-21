@@ -36,12 +36,12 @@ notepad c:\windows\system32\drivers\etc\hosts
 
 > Com VIM :)
 `
-sudo code /etc/hosts
+sudo vim /etc/hosts
 `
 
 > Com VSCode
 `
-sudo vim /etc/hosts
+sudo code /etc/hosts
 `
 
 ### Acrescente as configurações
